@@ -10,11 +10,12 @@ The necessary libraries for this project are:
 - datetime:       To convert timestamps
 - configurations: Module with the database username, password, host, etc
 
-To build a websocket app in its simplest form, we need to define what happens 
-- on opening the websocket connection
-- on closing the connection
-- when an error occurs
-- on incoming messages
+## Prerequisites
+The Database is run through docker. Install docker via this [link](https://www.docker.com/get-started)
 
-We want to subscribe to the bitcoin price candlestick stream, so we send a json file to the websocket on opening of the connection.
-When we receive a message, we want to print the price and then query an sql insertion with the price data.
+Timescale DB can be installed to docker with this command in the command line (Please choose a password for your database):
+
+```docker run -d --name timescaledb -p 5432:5432 -e POSTGRES_PASSWORD=[insert your password here] timescale/timescaledb:2.2.0-pg13```
+
+Further information on installing timescale db in docker can be read [here](https://docs.timescale.com/latest/getting-started/installation/docker/installation-docker)
+
