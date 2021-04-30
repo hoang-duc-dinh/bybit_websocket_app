@@ -21,3 +21,6 @@ Please choose a password for your database and add it to the configurations file
 
 Further information on installing timescale db in docker can be read [here](https://docs.timescale.com/latest/getting-started/installation/docker/installation-docker)
 
+Dont forget to create the database and the tables with the SQL File.
+
+
