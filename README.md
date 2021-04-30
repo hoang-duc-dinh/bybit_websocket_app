@@ -1,4 +1,4 @@
-# bybit_websocket_app
+# bybit Websocket App
 
 For this project, I am using the websocket API of a bitcoin exchange (Bybit) to stream bitcoin prices to a database. Automatic orders can also be implemented into this script.
 The necessary libraries for this project are: 
