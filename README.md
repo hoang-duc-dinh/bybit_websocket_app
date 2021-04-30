@@ -15,7 +15,7 @@ The Database is run through docker. Install docker via this [link](https://www.d
 
 Timescale DB can be installed to docker with this command in the command line. 
 
-```docker run -d --name timescaledb -p 5432:5432 -e POSTGRES_PASSWORD=*[insert your password here]* timescale/timescaledb:2.2.0-pg13```
+```docker run -d --name timescaledb -p 5432:5432 -e POSTGRES_PASSWORD= [insert your password here] timescale/timescaledb:2.2.0-pg13```
 --
 Please choose a password for your database and add it to the configurations file.
 
