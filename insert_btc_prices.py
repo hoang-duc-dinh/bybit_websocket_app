@@ -1,3 +1,4 @@
+import configurations
 import psycopg2
 import psycopg2.extras
 import websocket, json, threading, pprint, time
